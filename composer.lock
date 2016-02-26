@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c5bfbcfde2ab01be5762b12d57859a75",
-    "content-hash": "8222fc43fc7a5937e0c8a9afc39f0ca9",
+    "hash": "6b90453d9db60605c058e8e932468970",
+    "content-hash": "34284ab0a6432551ceade79dfe3910b7",
     "packages": [
         {
             "name": "cmobi/rabbitmq-bundle",
