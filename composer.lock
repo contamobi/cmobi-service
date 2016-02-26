@@ -4,16 +4,22 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e225f1f7c1f7e1d33606aa991b406676",
-    "content-hash": "4a3a81c7ec63356c8be508c4c035fc79",
+    "hash": "d9c41c552ff23dfda3f6b04a3aafe480",
+    "content-hash": "a18a5d761f0d55cbd5d8b8019f7ff7d8",
     "packages": [
         {
             "name": "cmobi/rabbitmq-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:contamobi/cmobirabbitmqbundle.git",
-                "reference": "9ba0cfd18e8c918b7692724778e7108e973db106"
+                "url": "https://github.com/contamobi/CmobiRabbitmqBundle.git",
+                "reference": "d70a072a8828cc3a38d2ea69abcdbe6bb5c48e0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/d70a072a8828cc3a38d2ea69abcdbe6bb5c48e0c",
+                "reference": "d70a072a8828cc3a38d2ea69abcdbe6bb5c48e0c",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9",
@@ -36,10 +42,11 @@
                     "Cmobi\\RabbitmqBundle\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
-            "time": "2016-02-25 23:22:08"
+            "time": "2016-02-26 13:17:56"
         },
         {
             "name": "doctrine/annotations",
@@ -2098,16 +2105,16 @@
     "packages-dev": [
         {
             "name": "sensio/generator-bundle",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "5274eafa251359087230bade2ff35dd6cec2e530"
+                "reference": "ac91535054d025937d897d78ebb5fc2da5e955a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/5274eafa251359087230bade2ff35dd6cec2e530",
-                "reference": "5274eafa251359087230bade2ff35dd6cec2e530",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/ac91535054d025937d897d78ebb5fc2da5e955a4",
+                "reference": "ac91535054d025937d897d78ebb5fc2da5e955a4",
                 "shasum": ""
             },
             "require": {
@@ -2146,7 +2153,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2016-01-05 16:30:36"
+            "time": "2016-02-26 04:36:01"
         },
         {
             "name": "symfony/phpunit-bridge",
