@@ -1,5 +1,5 @@
 {
-    "name": "cmobi/cmobi-service",
+    "name": "cmobi/cmobi-service-standard",
     "license": "proprietary",
     "type": "project",
     "description": "Base skeleton to services in microservices arquitecture",
@@ -11,7 +11,7 @@
         "php": ">=5.5.9",
         "symfony/symfony": "2.8.*",
         "symfony/console": "^3.0",
-        "cmobi/rabbitmq-bundle": "dev-master@dev",
+        "cmobi/rabbitmq-bundle": "dev-master",
         "doctrine/orm": "^2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
         "symfony/monolog-bundle": "~2.4",
@@ -23,12 +23,6 @@
         "sensio/generator-bundle": "~3.0",
         "symfony/phpunit-bridge": "~2.7"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:contamobi/cmobirabbitmqbundle.git"
-        }
-    ],
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
