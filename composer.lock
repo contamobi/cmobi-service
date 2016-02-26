@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d9c41c552ff23dfda3f6b04a3aafe480",
-    "content-hash": "a18a5d761f0d55cbd5d8b8019f7ff7d8",
+    "hash": "21c22f172a40fa8b14319d24a66c0ffe",
+    "content-hash": "df405020f995c6ac678838ead052d07a",
     "packages": [
         {
             "name": "cmobi/rabbitmq-bundle",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contamobi/CmobiRabbitmqBundle.git",
-                "reference": "d70a072a8828cc3a38d2ea69abcdbe6bb5c48e0c"
+                "reference": "3f2f7b70fa56a4ca2e0de13144937404379bbd33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/d70a072a8828cc3a38d2ea69abcdbe6bb5c48e0c",
-                "reference": "d70a072a8828cc3a38d2ea69abcdbe6bb5c48e0c",
+                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/3f2f7b70fa56a4ca2e0de13144937404379bbd33",
+                "reference": "3f2f7b70fa56a4ca2e0de13144937404379bbd33",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2016-02-26 13:17:56"
+            "time": "2016-02-26 14:43:02"
         },
         {
             "name": "doctrine/annotations",
