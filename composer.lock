@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "21c22f172a40fa8b14319d24a66c0ffe",
-    "content-hash": "df405020f995c6ac678838ead052d07a",
+    "hash": "7a6609255c2d194fe184839886b1a029",
+    "content-hash": "9c3ac4a6fb61ac574fb009e601605ab1",
     "packages": [
         {
             "name": "cmobi/rabbitmq-bundle",
-            "version": "dev-master",
+            "version": "v1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contamobi/CmobiRabbitmqBundle.git",
-                "reference": "3f2f7b70fa56a4ca2e0de13144937404379bbd33"
+                "reference": "e9c57a0bb26370c44a5469556a86863d5d95e1f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/3f2f7b70fa56a4ca2e0de13144937404379bbd33",
-                "reference": "3f2f7b70fa56a4ca2e0de13144937404379bbd33",
+                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/e9c57a0bb26370c44a5469556a86863d5d95e1f7",
+                "reference": "e9c57a0bb26370c44a5469556a86863d5d95e1f7",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,8 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2016-02-26 14:43:02"
+            "description": "Bundle to manager RabbitMQ message broker using phpamqplib",
+            "time": "2016-02-26 15:32:16"
         },
         {
             "name": "doctrine/annotations",
@@ -2213,9 +2214,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "cmobi/rabbitmq-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
