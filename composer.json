@@ -1,5 +1,5 @@
 {
-    "name": "cmobi/service-standard",
+    "name": "cmobi/cmobi-service-standard",
     "license": "proprietary",
     "type": "project",
     "description": "Base skeleton to services in microservices arquitecture",
