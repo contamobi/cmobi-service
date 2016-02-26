@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7a6609255c2d194fe184839886b1a029",
-    "content-hash": "9c3ac4a6fb61ac574fb009e601605ab1",
+    "hash": "c5bfbcfde2ab01be5762b12d57859a75",
+    "content-hash": "8222fc43fc7a5937e0c8a9afc39f0ca9",
     "packages": [
         {
             "name": "cmobi/rabbitmq-bundle",
@@ -13,19 +13,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contamobi/CmobiRabbitmqBundle.git",
-                "reference": "e9c57a0bb26370c44a5469556a86863d5d95e1f7"
+                "reference": "fb3d95d2089c9e38c41dd026dc5ba40941510a3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/e9c57a0bb26370c44a5469556a86863d5d95e1f7",
-                "reference": "e9c57a0bb26370c44a5469556a86863d5d95e1f7",
+                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/fb3d95d2089c9e38c41dd026dc5ba40941510a3d",
+                "reference": "fb3d95d2089c9e38c41dd026dc5ba40941510a3d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9",
                 "php-amqplib/php-amqplib": "2.5.*",
-                "symfony/console": "^3.0",
-                "symfony/http-kernel": "~2.8"
+                "symfony/console": "^2.8",
+                "symfony/http-kernel": "2.8.*"
             },
             "require-dev": {
                 "phpunit/phpunit": "5.0",
@@ -47,7 +47,7 @@
                 "proprietary"
             ],
             "description": "Bundle to manager RabbitMQ message broker using phpamqplib",
-            "time": "2016-02-26 15:32:16"
+            "time": "2016-02-26 18:51:14"
         },
         {
             "name": "doctrine/annotations",
@@ -1332,66 +1332,6 @@
             ],
             "description": "A security checker for your composer.lock",
             "time": "2015-11-07 08:07:40"
-        },
-        {
-            "name": "symfony/console",
-            "version": "v3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "5a02eaadaa285e2bb727eb6bbdfb8201fcd971b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5a02eaadaa285e2bb727eb6bbdfb8201fcd971b0",
-                "reference": "5a02eaadaa285e2bb727eb6bbdfb8201fcd971b0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
-            },
-            "suggest": {
-                "psr/log": "For using the console logger",
-                "symfony/event-dispatcher": "",
-                "symfony/process": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Console\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Console Component",
-            "homepage": "https://symfony.com",
-            "time": "2016-02-02 13:44:19"
         },
         {
             "name": "symfony/monolog-bundle",
