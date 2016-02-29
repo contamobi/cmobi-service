@@ -1,0 +1,38 @@
+language: php
+
+php:
+    - 5.6
+    - 7.0.2
+    - hhvm
+    - hhvm-nightly
+
+env:
+    global:
+        - COMPOSER_PREFER_LOWEST=false
+        - SYMFONY_VERSION=2.8.*
+
+cache:
+    directories:
+        - vendor
+        - $HOME/.composer/cache
+
+install:
+    - composer self-update
+    - composer update --prefer-source
+
+script: 
+    - mkdir -p build/logs
+    - php vendor/bin/phpunit -c phpunit.xml.dist
+
+after_script: 
+    - travis_retry php vendor/bin/coveralls -v
+
+matrix:
+    include:
+        - php: 5.6
+          env: SYMFONY_VERSION=2.8.*
+    allow_failures:
+        - php: hhvm-nightly
+
+notifications:
+    email: daniel.oliveira@conta.mobi
