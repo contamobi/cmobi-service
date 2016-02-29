@@ -22,7 +22,7 @@ install:
 
 script: 
     - mkdir -p build/logs
-    - php vendor/bin/phpunit -c phpunit.xml.dist
+    - php vendor/bin/phpunit -c app/phpunit.xml.dist
 
 after_script: 
     - travis_retry php vendor/bin/coveralls -v
