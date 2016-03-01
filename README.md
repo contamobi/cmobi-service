@@ -11,6 +11,7 @@
 [![License](https://poser.pugx.org/cmobi/cmobi-service-standard/license)](https://packagist.org/packages/cmobi/cmobi-service-standard)
 
 This is a base for microservices architecture based on [Symfony 2](http://symfony.com/) project. It offer functionalities with rpc and publish/subiscribe patterns, system messaging, authentication and authorization to services.
+The structure of business logic is based on [Domain Driven Design](http://martinfowler.com/bliki/EvansClassification.html) methodology.
 
 ### Usage:
 

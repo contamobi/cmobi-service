@@ -1,3 +1,5 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+base_url:
+    pattern: /
+
+cmobi_api:
+    resource: "@ApiBundle/Resources/config/routing.yml"
