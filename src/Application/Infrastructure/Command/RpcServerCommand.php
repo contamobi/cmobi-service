@@ -17,8 +17,8 @@ class RpcServerCommand extends ContainerAwareCommand
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $output->writeln(date('Y-m-d H:i:s') . 'cmobi:rpc-server:run ................... Running Server');
-        $server = $this->getContainer()->get('cmobi_rabbitmq.rpc_server');
 
+        $server = $this->getContainer()->get('cmobi_rabbitmq.rpc_server');
         $server->run();
 
         $output->writeln(date('Y-m-d H:i:s') . 'cmobi:rpc-server:run ................... Exiting Server');

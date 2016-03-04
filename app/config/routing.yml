@@ -1,5 +1,2 @@
-base_url:
-    pattern: /
-
 cmobi_api:
     resource: "@ApiBundle/Resources/config/routing.yml"
