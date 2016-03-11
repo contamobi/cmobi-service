@@ -12,3 +12,15 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    #rabbitmq configs
+    rabbitmq_host: localhost
+    rabbitmq_port: 5672
+    rabbitmq_user: 'guest'
+    rabbitmq_password: 'guest'
+    rabbitmq_vhost: '/'
+    rabbitmq_lazy: false
+    rabbitmq_connection_timeout: 3
+    rabbitmq_connection_timeout: 3
+    rabbitmq_keepelive: false
+    rabbitmq_heartbeat: 0

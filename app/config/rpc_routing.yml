@@ -1,0 +1,3 @@
+cmobi_rabbitmq:
+    method: version
+    defaults: { _controller: InfrastructureBundle:DefaultRpc:version }
