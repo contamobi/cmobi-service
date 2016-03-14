@@ -58,6 +58,8 @@ doctrine:
         auto_mapping: true
 
 cmobi_rabbitmq:
+    router:
+        resource: "%kernel.root_dir%/config/rpc_routing.yml"
     connections:
         default:
             host: "%rabbitmq_host%"
@@ -72,5 +74,3 @@ cmobi_rabbitmq:
             keepalive: "%rabbitmq_keepelive%"
             # requires php-amqplib v2.4.1+
             heartbeat: "%rabbitmq_heartbeat%"
-    router:
-        resource: "%kernel.root_dir%/config/rpc_routing.yml"
