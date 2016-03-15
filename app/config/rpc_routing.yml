@@ -1,3 +1,2 @@
 cmobi_rabbitmq:
-    method: version
-    defaults: { _controller: InfrastructureBundle:DefaultRpc:version }
+    resource: '@InfrastructureBundle/Resources/config/rpc_routing.yml'
