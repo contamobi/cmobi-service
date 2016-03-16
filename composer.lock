@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contamobi/CmobiRabbitmqBundle.git",
-                "reference": "27b3bc6ee7278a75acdcb97e2db64f266148d802"
+                "reference": "a61eba266dde994d442f64609510215dedc32a53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/27b3bc6ee7278a75acdcb97e2db64f266148d802",
-                "reference": "27b3bc6ee7278a75acdcb97e2db64f266148d802",
+                "url": "https://api.github.com/repos/contamobi/CmobiRabbitmqBundle/zipball/a61eba266dde994d442f64609510215dedc32a53",
+                "reference": "a61eba266dde994d442f64609510215dedc32a53",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
                 }
             ],
             "description": "Bundle to manager RabbitMQ message broker using phpamqplib",
-            "time": "2016-03-15 20:02:27"
+            "time": "2016-03-16 15:18:58"
         },
         {
             "name": "doctrine/annotations",
