@@ -19,7 +19,7 @@ class RestControllerTest extends \PHPUnit_Framework_TestCase
          * @var $mock \ApiBundle\Controller\RestController
          * @var $param \Application\Domain\ValueObjectInterface
          */
-        $response = $mock->handle($param);
+        $response = $mock->handle(json_encode($param));
 
         $this->assertInstanceOf(Response::class, $response);
     }

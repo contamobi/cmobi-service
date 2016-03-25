@@ -9,11 +9,11 @@ use Symfony\Component\HttpFoundation\Response;
 abstract class RestController extends Controller
 {
     /**
-     * @param ValueObjectInterface $response
+     * @param string $response
      * @param $contentType
      * @return Response
      */
-    public function handle(ValueObjectInterface $response, $contentType = 'application/json')
+    public function handle($response, $contentType = 'application/json')
     {
         $response = new Response($response);
         $response->headers->set('Content-Type', $contentType);
