@@ -10,5 +10,5 @@ namespace Application\Domain;
  */
 interface ValueObjectInterface
 {
-    public function __toString();
+    public function sameAs(ValueObjectInterface $other);
 }
