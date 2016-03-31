@@ -2,10 +2,12 @@
 
 namespace Application\Infrastructure\Controller;
 
-class DefaultRpcController
+use Cmobi\RabbitmqBundle\Rpc\Controller\RpcController;
+
+class DefaultRpcController extends RpcController
 {
-    public function versionAction()
+    public function whoAction()
     {
-        return '1.0';
+        return ['name' => 'Daniel Oliveira <daniel@headdev.com.br>'];
     }
 }

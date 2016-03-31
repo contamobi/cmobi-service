@@ -32,8 +32,19 @@ class Address implements ValueObjectInterface
         return $this->zipcode;
     }
 
-    public function __toString()
+    public function sameAs(ValueObjectInterface $other)
     {
-        return join(', ', [$this->street, $this->number, $this->zipcode]);
+        if (!$other instanceof Address) {
+            return false;
+        }
+
+        if (
+            $this->getNumber() == $other->getNumber()
+            && $this->getStreet() == $other->getStreet()
+            && $this->getZipCode() == $other->getZipCode()
+        ) {
+            return true;
+        }
+        return false;
     }
 }
