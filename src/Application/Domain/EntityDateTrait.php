@@ -7,11 +7,6 @@ trait EntityDateTrait
     protected $created;
     protected $updated;
 
-    public function __construct()
-    {
-        $this->created = new \DateTime('now');
-    }
-
     /**
      * @return \DateTime
      */
@@ -20,12 +15,9 @@ trait EntityDateTrait
         return $this->created;
     }
 
-    /**
-     * @param \DateTime $date
-     */
-    public function setCreated(\DateTime $date)
+    public function setCreated()
     {
-        $this->created = $date;
+        $this->created = new \DateTime('now');
     }
 
     /**

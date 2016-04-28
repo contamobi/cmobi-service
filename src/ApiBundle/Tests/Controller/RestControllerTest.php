@@ -9,10 +9,9 @@ class RestControllerTest extends \PHPUnit_Framework_TestCase
 {
     public function testHandle()
     {
-        $mock = $this->getMockForAbstractClass(RestController::class);
-        $mock->expects($this->any())
-            ->method('handle')
-            ->will($this->returnValue(new Response()));
+        $mock = $this->getMock(RestController::class);
+        $mock->method('handle')
+            ->willReturn(new Response());
         $param = $this->getMock('Application\Domain\ValueObjectInterface');
 
         /**

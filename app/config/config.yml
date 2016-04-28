@@ -30,12 +30,10 @@ framework:
     fragments:       ~
     http_method_override: true
 
-# Twig Configuration
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
 
-# Doctrine Configuration
 doctrine:
     dbal:
         driver:   pdo_mysql
@@ -45,21 +43,22 @@ doctrine:
         user:     "%database_user%"
         password: "%database_password%"
         charset:  UTF8
-        # if using pdo_sqlite as your database driver:
-        #   1. add the path in parameters.yml
-        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
-        #   2. Uncomment database_path in parameters.yml.dist
-        #   3. Uncomment next line:
-        #     path:     "%database_path%"
-
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
 
+doctrine_migrations:
+    dir_name: "%kernel.root_dir%/DoctrineMigrations"
+    namespace: Application\Migrations
+    table_name: migration_versions
+    name: Application Migrations
+
 cmobi_rabbitmq:
     router:
         resource: "%kernel.root_dir%/config/rpc_routing.yml"
+    log_path: "%kernel.logs_dir%/rabbitmq.log"
+    basic_qos: 1
     connections:
         default:
             host: "%rabbitmq_host%"
