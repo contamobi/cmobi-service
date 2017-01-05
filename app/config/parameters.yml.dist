@@ -24,3 +24,5 @@ parameters:
     rabbitmq_connection_timeout: 3
     rabbitmq_keepelive: false
     rabbitmq_heartbeat: 0
+    rabbitmq_queuename_prefix: cmobi_
+    rabbitmq_queuename_sufix: _queue
