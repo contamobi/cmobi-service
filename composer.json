@@ -12,7 +12,7 @@
         "symfony/symfony": "2.8.*",
         "symfony/console": "^2.8",
         "symfony/serializer": "^2.8",
-        "cmobi/rabbitmq-bundle": "dev-master",
+        "cmobi/microservice-framework-bundle": "dev-master",
         "doctrine/orm": "~2.5",
         "doctrine/doctrine-bundle": "~1.5",
         "symfony/monolog-bundle": "~2.4",

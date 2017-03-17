@@ -13,6 +13,9 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
+    #microservice configs
+    microservice_name: default
+
     #rabbitmq configs
     rabbitmq_host: localhost
     rabbitmq_port: 5672
@@ -21,8 +24,8 @@ parameters:
     rabbitmq_vhost: '/'
     rabbitmq_lazy: false
     rabbitmq_connection_timeout: 3
-    rabbitmq_connection_timeout: 3
-    rabbitmq_keepelive: false
+    rabbitmq_read_write_timeout: 3
+    rabbitmq_keepalive: false
     rabbitmq_heartbeat: 0
     rabbitmq_queuename_prefix: cmobi_
     rabbitmq_queuename_sufix: _queue

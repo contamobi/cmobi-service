@@ -16,7 +16,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
-            new \Cmobi\RabbitmqBundle\CmobiRabbitmqBundle(),
+            new \Cmobi\MicroserviceFrameworkBundle\MicroserviceFrameworkBundle(),
             new Application\Infrastructure\InfrastructureBundle(),
             new ApiBundle\ApiBundle()
         );

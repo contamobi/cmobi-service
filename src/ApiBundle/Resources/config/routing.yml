@@ -1,3 +1,4 @@
 api_default:
     pattern: /
-    defaults: { _controller: ApiBundle:Default:index }
+    defaults: { _controller: ApiBundle:Default:who }
+    options: { method: 'who' }

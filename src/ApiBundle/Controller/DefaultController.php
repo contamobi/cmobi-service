@@ -2,10 +2,13 @@
 
 namespace ApiBundle\Controller;
 
-class DefaultController extends RestController
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
+
+class DefaultController extends Controller
 {
-    public function indexAction()
+    public function whoAction()
     {
-        return $this->render('default/index.html.twig', []);
+        return new JsonResponse(['name' => 'Daniel Oliveira <daniel@headdev.com.br>']);
     }
 }

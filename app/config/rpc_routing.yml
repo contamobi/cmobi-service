@@ -1,2 +1,0 @@
-cmobi_rabbitmq:
-    resource: '@InfrastructureBundle/Resources/config/rpc_routing.yml'

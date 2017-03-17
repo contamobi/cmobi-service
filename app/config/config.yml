@@ -54,11 +54,9 @@ doctrine_migrations:
     table_name: migration_versions
     name: Application Migrations
 
-cmobi_rabbitmq:
-    router:
-        resource: "%kernel.root_dir%/config/rpc_routing.yml"
-    log_path: "%kernel.logs_dir%/rabbitmq.log"
-    basic_qos: 1
+microservice_framework:
+    microservice_name: "%microservice_name%"
+    log_path: "%kernel.logs_dir%/msf.log"
     connections:
         default:
             host: "%rabbitmq_host%"
@@ -68,8 +66,20 @@ cmobi_rabbitmq:
             vhost:    "%rabbitmq_vhost%"
             lazy:     "%rabbitmq_lazy%"
             connection_timeout: "%rabbitmq_connection_timeout%"
-            read_write_timeout: "%rabbitmq_connection_timeout%"
+            read_write_timeout: "%rabbitmq_read_write_timeout%"
             # requires php-amqplib v2.4.1+ and PHP5.4+
-            keepalive: "%rabbitmq_keepelive%"
+            keepalive: "%rabbitmq_keepalive%"
             # requires php-amqplib v2.4.1+
             heartbeat: "%rabbitmq_heartbeat%"
+    #rpc_servers:
+        #server name:
+        #    queue: { name: #queue name }
+        #    jobs: #number of jobs
+    #workers:
+        #worker name:
+        #    queue: { name: #queue name }
+        #    jobs: #number of jobs
+    #subscribers:
+        #subscriber name:
+        #    queue: { name: #queue name, exchange: #exchange name }
+        #    jobs: #number of jobs
