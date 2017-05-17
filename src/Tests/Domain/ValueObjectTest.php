@@ -1,8 +1,8 @@
 <?php
 
-namespace  Application\Infrastructure\Test\Domain;
+namespace  Test\Domain;
 
-use Application\Tests\Domain\Fixtures\Address;
+use Tests\Domain\Fixtures\Address;
 
 class ValueObjectTest extends \PHPUnit_Framework_TestCase
 {

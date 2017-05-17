@@ -1,8 +1,8 @@
 <?php
 
-namespace Application\Infrastructure;
+namespace Infrastructure;
 
-use Application\Infrastructure\DependencyInjection\InfrastructureExtension;
+use Infrastructure\DependencyInjection\InfrastructureExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class InfrastructureBundle extends Bundle

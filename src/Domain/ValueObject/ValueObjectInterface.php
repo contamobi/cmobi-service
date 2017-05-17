@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Domain;
+namespace Domain\ValueObject;
 
 /**
  * This interface determine DDD Value Objects on Domain.

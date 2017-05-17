@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Tests;
+namespace Tests;
 
 use Symfony\Component\DependencyInjection\Container;
 

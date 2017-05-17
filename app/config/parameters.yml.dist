@@ -14,18 +14,5 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     #microservice configs
-    microservice_name: default
-
-    #rabbitmq configs
-    rabbitmq_host: localhost
-    rabbitmq_port: 5672
-    rabbitmq_user: 'guest'
-    rabbitmq_password: 'guest'
-    rabbitmq_vhost: '/'
-    rabbitmq_lazy: false
-    rabbitmq_connection_timeout: 3
-    rabbitmq_read_write_timeout: 3
-    rabbitmq_keepalive: false
-    rabbitmq_heartbeat: 0
-    rabbitmq_queuename_prefix: cmobi_
-    rabbitmq_queuename_sufix: _queue
+    microservice_name: cmobi_service_standard
+    api_version: v1

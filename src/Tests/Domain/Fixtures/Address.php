@@ -1,8 +1,8 @@
 <?php
 
-namespace Application\Tests\Domain\Fixtures;
+namespace Tests\Domain\Fixtures;
 
-use Application\Domain\ValueObjectInterface;
+use Domain\ValueObject\ValueObjectInterface;
 
 class Address implements ValueObjectInterface
 {

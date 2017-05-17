@@ -13,10 +13,7 @@
 
     <testsuites>
         <testsuite name="Cmobi Service Standard Project Test Suite">
-            <directory>../src/*/*Bundle/Tests</directory>
-            <directory>../src/*/Bundle/*Bundle/Tests</directory>
-            <directory>../src/*Bundle/Tests</directory>
-            <directory>../src/Application/Tests</directory>
+            <directory>../src/Tests</directory>
         </testsuite>
     </testsuites>
 
@@ -30,13 +27,7 @@
         <whitelist>
             <directory>../src</directory>
             <exclude>
-                <directory>../src/*Bundle/Resources</directory>
-                <directory>../src/*Bundle/Tests</directory>
-                <directory>../src/*/*Bundle/Resources</directory>
-                <directory>../src/*/*Bundle/Tests</directory>
-                <directory>../src/*/Bundle/*Bundle/Resources</directory>
-                <directory>../src/*/Bundle/*Bundle/Tests</directory>
-                <directory>../src/Application/Tests</directory>
+                <directory>../src/Tests/*/Resources</directory>
             </exclude>
         </whitelist>
     </filter>

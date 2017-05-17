@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Domain;
+namespace Domain\ValueObject;
 
 trait EntityDateTrait
 {

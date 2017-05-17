@@ -19,8 +19,6 @@ framework:
     csrf_protection: ~
     validation:      { enable_annotations: true }
     #serializer:      { enable_annotations: true }
-    templating:
-        engines: ['twig']
     default_locale:  "%locale%"
     trusted_hosts:   ~
     trusted_proxies: ~
@@ -29,10 +27,6 @@ framework:
         handler_id:  ~
     fragments:       ~
     http_method_override: true
-
-twig:
-    debug:            "%kernel.debug%"
-    strict_variables: "%kernel.debug%"
 
 doctrine:
     dbal:
@@ -50,36 +44,19 @@ doctrine:
 
 doctrine_migrations:
     dir_name: "%kernel.root_dir%/DoctrineMigrations"
-    namespace: Application\Migrations
+    namespace: Infrastructure\Migrations
     table_name: migration_versions
     name: Application Migrations
 
+fos_rest:
+    param_fetcher_listener: force
+    body_converter:
+        enabled: true
+    routing_loader:
+        default_format: json
+        include_format: false
+    access_denied_listener:
+        json: true
+
 microservice_framework:
     microservice_name: "%microservice_name%"
-    log_path: "%kernel.logs_dir%/msf.log"
-    connections:
-        default:
-            host: "%rabbitmq_host%"
-            port: "%rabbitmq_port%"
-            user: "%rabbitmq_user%"
-            password: "%rabbitmq_password%"
-            vhost:    "%rabbitmq_vhost%"
-            lazy:     "%rabbitmq_lazy%"
-            connection_timeout: "%rabbitmq_connection_timeout%"
-            read_write_timeout: "%rabbitmq_read_write_timeout%"
-            # requires php-amqplib v2.4.1+ and PHP5.4+
-            keepalive: "%rabbitmq_keepalive%"
-            # requires php-amqplib v2.4.1+
-            heartbeat: "%rabbitmq_heartbeat%"
-    #rpc_servers:
-        #server name:
-        #    queue: { name: #queue name }
-        #    jobs: #number of jobs
-    #workers:
-        #worker name:
-        #    queue: { name: #queue name }
-        #    jobs: #number of jobs
-    #subscribers:
-        #subscriber name:
-        #    queue: { name: #queue name, exchange: #exchange name }
-        #    jobs: #number of jobs

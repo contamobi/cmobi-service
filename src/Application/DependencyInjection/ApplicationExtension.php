@@ -1,13 +1,13 @@
 <?php
 
-namespace Application\Infrastructure\DependencyInjection;
+namespace Application\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
-final class InfrastructureExtension extends Extension
+final class ApplicationExtension extends Extension
 {
     /**
      * {@inheritdoc}
