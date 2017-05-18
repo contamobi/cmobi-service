@@ -1,6 +1,7 @@
 cmobi:
    path: /
    defaults: { _controller: ApiBundle:Defaults:index }
+
 cmobi_api:
     type: rest
     resource: "@ApiBundle/Resources/config/routing.yml"

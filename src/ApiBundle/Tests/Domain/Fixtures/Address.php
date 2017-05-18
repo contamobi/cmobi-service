@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Domain\Fixtures;
+namespace ApiBundle\Tests\Domain\Fixtures;
 
-use Domain\ValueObject\ValueObjectInterface;
+use ApiBundle\Domain\ValueObject\ValueObjectInterface;
 
 class Address implements ValueObjectInterface
 {

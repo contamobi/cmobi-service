@@ -1,8 +1,8 @@
 <?php
 
-namespace  Test\Domain;
+namespace  ApiBundle\Tests\Domain;
 
-use Tests\Domain\Fixtures\Address;
+use ApiBundle\Tests\Domain\Fixtures\Address;
 
 class ValueObjectTest extends \PHPUnit_Framework_TestCase
 {

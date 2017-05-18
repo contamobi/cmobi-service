@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\ValueObject;
+namespace ApiBundle\Domain\ValueObject;
 
 /**
  * This interface determine DDD Value Objects on Domain.

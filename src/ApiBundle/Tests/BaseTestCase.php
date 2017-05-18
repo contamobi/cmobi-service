@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace ApiBundle\Tests;
 
 use Symfony\Component\DependencyInjection\Container;
 

@@ -14,11 +14,9 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new \Cmobi\MicroserviceFrameworkBundle\MicroserviceFrameworkBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
-            new \Cmobi\MicroserviceFrameworkBundle\MicroserviceFrameworkBundle(),
-            new Infrastructure\InfrastructureBundle(),
-            new Application\ApplicationBundle(),
             new ApiBundle\ApiBundle()
         );
 
